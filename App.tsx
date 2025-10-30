@@ -8,20 +8,32 @@ import Testimonials from './components/Testimonials';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import AnimatedSection from './components/AnimatedSection';
 
 const App: React.FC = () => {
   return (
-    // Apply both light and dark background handling
-    <div className="bg-white text-slate-900 dark:bg-slate-900 dark:text-white transition-colors duration-300 min-h-screen">
+    <div className="bg-white">
       <Header />
       <main>
         <Hero />
-        <AboutUs />
-        <Services />
-        <CaseStudies />
-        <Testimonials />
-        <Blog />
-        <Contact />
+        <AnimatedSection>
+          <AboutUs />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Services />
+        </AnimatedSection>
+        <AnimatedSection>
+          <CaseStudies />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Testimonials />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Blog />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Contact />
+        </AnimatedSection>
       </main>
       <Footer />
     </div>
