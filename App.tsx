@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -12,7 +11,8 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="bg-white">
+    // Apply both light and dark background handling
+    <div className="bg-white text-slate-900 dark:bg-slate-900 dark:text-white transition-colors duration-300 min-h-screen">
       <Header />
       <main>
         <Hero />
