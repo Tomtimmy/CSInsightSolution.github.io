@@ -1,5 +1,4 @@
 import React from 'react';
-import NewsletterForm from './NewsletterForm';
 
 const Hero: React.FC = () => {
   return (
@@ -33,7 +32,7 @@ const Hero: React.FC = () => {
           </a>
         </div>
         <div className="mt-16 max-w-xl mx-auto">
-          <NewsletterForm idPrefix="hero" />
+        
         </div>
       </div>
     </section>
