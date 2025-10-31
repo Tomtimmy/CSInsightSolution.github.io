@@ -1,6 +1,6 @@
 import React from 'react';
-import Services from '../components/Services';
-import AnimatedSection from '../components/AnimatedSection';
+import Services from '../../components/Services';
+import AnimatedSection from '../../components/AnimatedSection';
 
 const ServicesPage: React.FC = () => {
   return (

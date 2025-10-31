@@ -1,6 +1,6 @@
 import React from 'react';
-import Blog from '../components/Blog';
-import AnimatedSection from '../components/AnimatedSection';
+import Blog from '../../components/Blog';
+import AnimatedSection from '../../components/AnimatedSection';
 
 const BlogPage: React.FC = () => {
   return (

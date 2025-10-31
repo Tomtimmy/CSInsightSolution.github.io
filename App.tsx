@@ -1,43 +1,28 @@
 import React from 'react';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import AboutUs from './components/AboutUs';
-import Services from './components/Services';
-import CaseStudies from './components/CaseStudies';
-import Testimonials from './components/Testimonials';
-import Blog from './components/Blog';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
-import AnimatedSection from './components/AnimatedSection';
 
-const App: React.FC = () => {
-  return (
-    <div className="bg-white">
-      <Header />
-      <main>
-        <Hero />
-        <AnimatedSection>
-          <AboutUs />
-        </AnimatedSection>
-        <AnimatedSection>
-          <Services />
-        </AnimatedSection>
-        <AnimatedSection>
-          <CaseStudies />
-        </AnimatedSection>
-        <AnimatedSection>
-          <Testimonials />
-        </AnimatedSection>
-        <AnimatedSection>
-          <Blog />
-        </AnimatedSection>
-        <AnimatedSection>
-          <Contact />
-        </AnimatedSection>
-      </main>
-      <Footer />
-    </div>
-  );
-};
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ServicesPage from './pages/ServicesPage';
+import CaseStudiesPage from './pages/CaseStudiesPage';
+import BlogPage from './pages/BlogPage';
+import ContactPage from './pages/ContactPage';
+
+const App: React.FC = () => (
+  <Router>
+    <Header />
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/services" element={<ServicesPage />} />
+      <Route path="/case-studies" element={<CaseStudiesPage />} />
+      <Route path="/blog" element={<BlogPage />} />
+      <Route path="/contact" element={<ContactPage />} />
+    </Routes>
+    <Footer />
+  </Router>
+);
 
 export default App;

@@ -1,6 +1,6 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { HashRouter } from 'react-router-dom';
 import App from './App';
 
 const rootElement = document.getElementById('root');
@@ -9,8 +9,12 @@ if (!rootElement) {
 }
 
 const root = ReactDOM.createRoot(rootElement);
+
 root.render(
   <React.StrictMode>
-    <App />
+    {/* HashRouter ensures GitHub Pages handles routing correctly */}
+    <HashRouter>
+      <App />
+    </HashRouter>
   </React.StrictMode>
 );
