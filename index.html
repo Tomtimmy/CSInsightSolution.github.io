@@ -1,12 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Add your favicon here -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>C_S Insight and Solution Firm</title>
+
+    <!-- ✅ Tailwind CDN for now (ok for testing, not production) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -18,26 +18,31 @@
             keyframes: {
               'subtle-pulse': {
                 '0%, 100%': { opacity: 1 },
-                '50%': { opacity: .9 },
+                '50%': { opacity: 0.9 },
               }
             }
           }
         }
       }
     </script>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+
+    <!-- ✅ Import maps -->
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@18.3.1",
+        "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+        "react-router-dom": "https://esm.sh/react-router-dom@6.23.1",
+        "@google/genai": "https://cdn.jsdelivr.net/npm/@google/genai/dist/index.mjs"
+      }
+    }
+    </script>
+  </head>
+
   <body class="bg-slate-50 text-slate-800">
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+
+    <!-- ✅ Use relative path -->
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
