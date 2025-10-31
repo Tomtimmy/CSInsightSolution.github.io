@@ -1,12 +1,12 @@
 import React from 'react';
-import Hero from '../../components/Hero';
-import AnimatedSection from '../../components/AnimatedSection';
-import AboutUs from '../../components/AboutUs';
-import Services from '../../components/Services';
-import Testimonials from '../../components/Testimonials';
-import CaseStudies from '../../components/CaseStudies';
-import Blog from '../../components/Blog';
-import Contact from '../../components/Contact';
+import Hero from '../components/Hero';
+import AnimatedSection from '../components/AnimatedSection';
+import AboutUs from '../components/AboutUs';
+import Services from '../components/Services';
+import Testimonials from '../components/Testimonials';
+import CaseStudies from '../components/CaseStudies';
+import Blog from '../components/Blog';
+import Contact from '../components/Contact';
 
 
 
